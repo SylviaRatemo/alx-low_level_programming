@@ -1,8 +1,4 @@
-/**
- *
- * function to utilize puts
- *
- */
+/* function to utilize puts*/
 
 #include<stdio.h>
 
