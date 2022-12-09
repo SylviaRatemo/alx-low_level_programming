@@ -1,3 +1,4 @@
+/*libraries*/
 #include<stdio.h>
 
 /*main function*/
