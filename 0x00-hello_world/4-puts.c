@@ -1,13 +1,11 @@
 /* function to utilize puts*/
 
 #include<stdio.h>
-
 /**
  * main function
  *
  * Return 0
  */
-
 int main(void)
 {
 /*puts syntax*/
