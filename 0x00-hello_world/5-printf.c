@@ -1,17 +1,14 @@
 #include<stdio.h>
 
 /**
+ * main - Entry point
  *
- * main function
- *
- * Return 0
+ * Description: 'the program's description'
+ * 
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-/**
- *
- * printf command
- */
 printf("with proper grammar, but the outcome is a piece of art,\n");
 return (0);
 }
