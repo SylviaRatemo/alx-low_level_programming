@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- *Description: 'the program's description'
+ *Description: 'the program description'
  * 
  *Return: Always 0 (Success)
  */
