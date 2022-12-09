@@ -1,11 +1,11 @@
 #include<stdio.h>
 
 /**
- * main function with return zero
+ * main - function with return zero
  *
- * Description: 
+ * Description: 'use of puts instead of printf 
  *
- * Return:Always 0
+ * Return: Always 0
  */
 int main(void)
 {
