@@ -2,10 +2,7 @@
 
 /**
  * main - Entry point
- *
- *Description: 'the program description'
- * 
- *Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
