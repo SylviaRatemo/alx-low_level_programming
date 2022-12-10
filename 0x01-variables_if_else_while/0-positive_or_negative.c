@@ -21,14 +21,14 @@ printf("%d is positive ",(signed int)n);
 }
 else
 {
-    if (n < 0)
-    {
-        printf("%d is negative ",(signed int)n);
-    }
-    else
-    {
-        printf("%d is zero ",(signed int)n);
-    }
+if (n < 0)
+{
+printf("%d is negative ",(signed int)n);
+}
+else
+{
+printf("%d is zero ",(signed int)n);
+}
 }
 return (0);
 }
