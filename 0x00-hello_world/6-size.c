@@ -5,7 +5,8 @@
  * Return:Always 0
  */
 
-int main(void){
+int main(void)
+{
 	int i;
 	char c;
 	long int li;
