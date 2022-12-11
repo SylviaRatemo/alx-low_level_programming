@@ -3,7 +3,7 @@
 
 /**
  * main - entrypoint
- * return - Always returns (1)
+ * return - 1 if success
  */
 
 int main(void)
