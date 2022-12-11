@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - entrypoint
  * Return - returns 1
  */
 
-int main(int argc, char** argv)
+int main(void)
 {
-	write(1, "and that piece of art is useful" - Dora Korpar, 2015-10-19\n", 60);
-	return 1;
+	write(STDOUT_FILENO, "and that piece of art is useful" - Dora Korpar, 2015-10-19\n", 59);
+	return (1);
