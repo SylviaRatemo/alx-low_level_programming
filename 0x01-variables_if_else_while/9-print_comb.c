@@ -11,20 +11,16 @@ int main(void)
 
 	while (num < 10)
 	{
+		puchar((num % 10) + '0');
 		if (num != 9)
 		{
-			putchar((num % 10) + '0');
-			putchar(44 + ' ');
-			num++;
+			putchar(44);
+			putchar(32);
 		}
-		else
-		{
-			putchar((num % 10) + '0');
-			num++;
-		}
+		num++;
 	}
 
-	/*putchar('\n');*/
+	putchar('\n');
 
 	return (0);
 }
