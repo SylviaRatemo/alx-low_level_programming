@@ -14,8 +14,7 @@ int main(void)
 		if (num != 9)
 		{
 			putchar((num % 10) + '0');
-			putchar(44);
-			putchar(32);
+			putchar(44 + 32);
 			num++;
 		}
 		else
