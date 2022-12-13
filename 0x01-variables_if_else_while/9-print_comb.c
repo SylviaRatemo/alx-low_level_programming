@@ -11,7 +11,7 @@ int main(void)
 
 	while (num < 10)
 	{
-		puchar((num % 10) + '0');
+		putchar((num % 10) + '0');
 		if (num != 9)
 		{
 			putchar(44);
