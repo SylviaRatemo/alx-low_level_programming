@@ -8,11 +8,7 @@
 
 void print_numbers(int n)
 {
-	if (n != 0)
-	{
-		print_numbers(n / 10);
-		putchar((n % 10) + '0');
-	}
+	putchar((n % 10) + '0');
 }
 
 int main(void)
