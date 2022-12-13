@@ -2,14 +2,8 @@
 
 /**
  * main - Entry
- * print_numbers - uses putchar to print numbers
  * Return:Always 0
  */
-
-void print_numbers(int n)
-{
-	putchar((n % 10) + '0');
-}
 
 int main(void)
 {
@@ -17,7 +11,7 @@ int main(void)
 
 	while (num < 10)
 	{
-		print_numbers(num);
+		putchar((num % 10) + '0';
 		num++;
 	}
 	putchar('\n');
