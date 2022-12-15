@@ -13,7 +13,7 @@ void times_table(void)
 		for (r = 0; r < 10; r++)
 		{
 			product = (c * r);
-			_putchar(product);
+			_putchar((product % 10) + '0');
 			_putchar(',');
 			_putchar(' ');
 		}
