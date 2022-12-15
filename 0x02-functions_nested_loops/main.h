@@ -1,5 +1,5 @@
-#ifndef main
-#define main
+#ifndef MAIN
+#define MAIN
 
 /*File: main.h
  * Auth: Sylvia Ratemo
