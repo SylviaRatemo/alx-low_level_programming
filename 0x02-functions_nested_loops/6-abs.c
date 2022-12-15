@@ -5,18 +5,18 @@
  * Return:Always 0
  */
 
-int _abs(int)
+int _abs(int c)
 {
 	int ab;
 
-	if (int < 0)
+	if (c < 0)
 	{
-		ab = int * -1;
+		ab = c * -1;
 		_putchar(ab);
 	}
-	else if (int > 0)
+	else if (c > 0)
 	{
-		ab = int;
+		ab = c;
 		_putchar(ab);
 	}
 	else
