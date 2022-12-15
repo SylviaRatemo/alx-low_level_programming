@@ -8,16 +8,28 @@ void times_table(void)
 {
 	int c, r, product;
 
-	for (c = 0; c < 10; c++)
+	for (r = 0; r <= 9; r++)
 	{
-		for (r = 0; r < 10; r++)
+		_putchar('0);
+		_putchar(',');
+		_putchar(' ');
+		for (c = 0; c < 10; c++)
 		{
 			product = (c * r);
-			_putchar((c % 10) + '0');
-			_putchar((r % 10) + '0');
+			if((product / 10) > 0)
+			{
+				_putchar((product / 10) + '0');
+			}
+			else
+			{
+				_putchar(' ');
+			}
 			_putchar((product % 10) + '0');
-			_putchar(',');
-			_putchar(' ');
+			if (c < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 	}
