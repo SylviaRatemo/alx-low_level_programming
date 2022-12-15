@@ -9,8 +9,7 @@ void times_table(void)
 	int c, r, product;
 
 	for (r = 0; r <= 9; r++)
-	{
-		_putchar(',');
+	{	
 		_putchar(' ');
 		for (c = 0; c <= 9; c++)
 		{
