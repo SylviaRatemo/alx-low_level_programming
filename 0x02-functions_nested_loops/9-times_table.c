@@ -8,12 +8,12 @@ void times_table(void)
 {
 	int c, r, product;
 
-	for (r = 0; r <= 9; r++)
+	for (r = 0; r <= 9; r++;)
 	{
 		_putchar('0');
 		_putchar(',');
 		_putchar(' ');
-		for (c = 0; c < 10; c++;)
+		for (c = 0; c <= 9; c++;)
 		{
 			product = (c * r);
 			if((product / 10) > 0)
