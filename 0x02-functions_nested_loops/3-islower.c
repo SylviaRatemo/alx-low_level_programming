@@ -2,6 +2,7 @@
 
 /**
  * _islower - checks if c is lowercase
+ * @c: single letter input
  * Return: 1 if int c is lowercase, o otherwise
  */
 
@@ -11,7 +12,7 @@ int _islower(int c)
 	{
 		return (1);
 	}
-	else 
+	else
 	{
 		return (0);
 	}
