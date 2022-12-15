@@ -24,7 +24,7 @@ int main(void)
 		}
 		else
 		{
-			print(", ");
+			printf(", ");
 		}
 	}
 	return (0);
