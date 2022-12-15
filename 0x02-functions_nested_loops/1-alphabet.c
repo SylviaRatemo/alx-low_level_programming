@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	char c;
+	int c;
 
 	while (c <= 'z')
 	{
