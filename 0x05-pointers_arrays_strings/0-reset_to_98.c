@@ -14,7 +14,7 @@ void reset_to_98(int *n)
 /**
  * main - check code
  * Return: Always 0;
- */
+
 
 int main(void)
 {
@@ -28,3 +28,4 @@ int main(void)
 
 	return (0);
 }
+*/
