@@ -19,15 +19,8 @@ void print_line(int n)
 	{
 		for (; i < n; i++)
 		{
-			if (n == i)
-			{
-				putchar('_');
-				putchar('\n');
-			}
-			else
-			{
-				putchar('_');
-			}
+			putchar('_');
 		}
+		putchar('\n');
 	}
 }
