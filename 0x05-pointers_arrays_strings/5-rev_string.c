@@ -31,6 +31,4 @@ void rev_string(char *s)
 		begin++;
 		end--;
 	}
-
-	printf("%s\n", s);
 }
