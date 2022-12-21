@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_triangle - Prints triangle, using #
@@ -15,11 +16,11 @@ void print_triangle(int size)
 		{
 			for (index = size - hash; index > 0; index--)
 			{
-				_putchar(' ');
+				putchar(' ');
 			}
 			for (index = 0; index < hash; index++)
 			{
-				_putchar('#');
+				putchar('#');
 			}
 
 			if (hash == size)
@@ -27,8 +28,8 @@ void print_triangle(int size)
 				continue;
 			}
 
-			_putchar('\n');
+			putchar('\n');
 		}
 	}
-	_putchar('\n');
+	putchar('\n');
 }
