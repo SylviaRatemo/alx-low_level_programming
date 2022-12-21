@@ -34,6 +34,7 @@ int main(void)
 		else
 		{
 			printf("Buzz\n");
+		}
 	}
 
 	return (0);
