@@ -12,11 +12,14 @@
 int _atoi(char *s)
 {
 	int i = 0, num = 0;
-	int n = strlen(s);
 
-	for (; i < n; i++)
+	for (; s[i] != '\0'; ++i)
 	{
-		if (s[i] != '\0')
+		if (s[i] > 9 || s[i] < '\0')
+		{
+			return (-1);
+		}
+		else
 		{
 			num = num * 10 + (s[i] - '0');
 		}
