@@ -7,13 +7,14 @@
  * @s: input variable
  * Return Always 0
  */
+A
 
 int _atoi(char *s)
 {
-	int num = 0;
+	int i = 0, num = 0;
 	int n = strlen(s);
 
-	for (int i = 0; i < n; i++)
+	for (; i < n; i++)
 	{
 		num = num * 10 + (s[i] - 48);
 	}
