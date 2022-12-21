@@ -19,3 +19,4 @@ void print_rev(char *s)
 		s[length - i - 1] = temp;
 		printf("%d", s[i]);
 	}
+}
