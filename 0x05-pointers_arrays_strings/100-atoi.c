@@ -16,9 +16,9 @@ int _atoi(char *s)
 
 	for (; i < n; i++)
 	{
-		if (s[i] != 0)
+		if (s[i] != '\0')
 		{
-			num = num * 10 + (s[i] - 48);
+			num = num * 10 + (s[i] - '0');
 		}
 	}
 
