@@ -35,7 +35,7 @@ void print_rev(char *s)
 	begin = s;
 	end = s;
 
-	for (i = 0; i length / 2; i++)
+	for (i = 0; i < length / 2; i++)
 	{
 		ch = *end;
 		*end = *begin;
