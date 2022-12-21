@@ -7,7 +7,7 @@
  * @s: input variable
  * Return Always 0
  */
-A
+
 
 int _atoi(char *s)
 {
