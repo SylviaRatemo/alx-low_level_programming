@@ -8,6 +8,7 @@ void _puts(char *str);
 void print_rev(char *s);
 int _atoi(char *s);
 void rev_string(char *s);
+void puts2(char *str);
 
 
 #endif
