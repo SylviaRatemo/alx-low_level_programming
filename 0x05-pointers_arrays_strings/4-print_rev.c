@@ -10,12 +10,14 @@
 
 void print_rev(char *s)
 {
-	/*int i = 0, length = 0;
+	int i = 0, length = strlen(s), temp;
 
-	for (; *(s + i) != 0; i++)
+	for (; i < length/2; i++)
 	{
-		length++;
-	}*/
+		temp = s[i];
+		s[i] = s[length - i - 1];
+		s[len - i - 1] = temp;
+	}
 
-	printf("%s", strrev(s);
+	printf("%s", s;
 }	
