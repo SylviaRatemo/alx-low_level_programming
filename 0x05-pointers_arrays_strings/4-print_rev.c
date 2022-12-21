@@ -9,17 +9,31 @@
 
 void print_rev(char *s)
 {
-	int fcounter = 0;
-	int i, n;
+	int length, c;
+	char *begin, *end, temp;
 
-	for (i = 0; *(s + i) != 0; i++)
+	for (int i = 0; *(s + i) != 0; i++)
 	{
-		fcounter++;
+		length++;
 	}
 
-	for (n = (fcounter - 1); n >= 0; n--)
+	begin = s;
+	end = s;
+
+	for (c = 0; c <(length - 1); c++)
 	{
-		printf("%d",s[n]);
+		end++;
 	}
-	printf("\n");
+
+	for (c = 0; c < (length / 2); c++)
+	{
+		temp = *end;
+		*end = *begin;
+		*begin = temp;
+
+		begin++;
+		end--;
+	}
+
+	printf("%c", s);
 }
