@@ -35,6 +35,11 @@ void print_rev(char *s)
 	begin = s;
 	end = s;
 
+	for (i = 0; i < length - 1; i++)
+	{
+		end++;
+	}
+
 	for (i = 0; i < length / 2; i++)
 	{
 		ch = *end;
