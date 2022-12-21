@@ -11,20 +11,23 @@ void print_line(int n)
 {
 	int i = 0;
 
-	for (; i <= n; i++)
+	if (n <= 0)
 	{
-		if (n <= 0)
+		putchar('\n');
+	}
+	else
+	{
+		for (; i <= n; i++)
 		{
-			putchar('\n');
-		}
-		else if (n == i)
-		{
-			putchar('_');
-			putchar('\n');
-		}
-		else
-		{
-			putchar('_');
+			if (n == i)
+			{
+				putchar('_');
+				putchar('\n');
+			}
+			else
+			{
+				putchar('_');
+			}
 		}
 	}
 }
