@@ -5,7 +5,7 @@
 /**
  * _atoi - Entry
  * @s: input variable
- * Return Always 0
+ * Return: The integer
  */
 
 
@@ -38,4 +38,6 @@ int _atoi(char *s)
 	{
 		n = -n;
 	}
+
+	return (n);
 }
