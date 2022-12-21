@@ -35,5 +35,7 @@ void print_rev(char *s)
 		end--;
 	}
 
+	print_rev(s);
+
 	printf("%s", s);
 }
