@@ -29,11 +29,20 @@ int str_len(char *s)
 void print_rev(char *s)
 {
 	int length, i;
+	char *begin, *end, ch;
 
 	length = str_len(s);
+	begin = s;
+	end = s;
 
-	for (i = length; i >= 0; i--)
+	for (i = 0; i length / 2; i++)
 	{
-		printf("%c", *(s + i));
+		ch = *end;
+		*end = *begin;
+		*begin = ch;
+		begin++;
+		end--;
 	}
+
+	printf("%s\n", s);
 }
