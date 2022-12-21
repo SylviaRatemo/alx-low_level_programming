@@ -11,9 +11,9 @@ void print_diagonal(int n)
 {
 	int i = 0, s = 0;
 
-	if (n < 0)
+	if (n <= 0)
 	{
-		putchar('$');
+		putchar('\n');
 	}
 	else 
 	{
