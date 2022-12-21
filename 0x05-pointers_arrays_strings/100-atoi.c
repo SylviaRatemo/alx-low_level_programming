@@ -11,21 +11,31 @@
 
 int _atoi(char *s)
 {
-	int i = 0, num = 0;
+	int c, sign, offset, n;
 
-	for (; s[i] != '\0'; ++i)
+	if (s[0] == '-')
 	{
-		if (s[i] > 9 || s[i] < '\0')
-		{
-			return (-1);
-		}
-		else
-		{
-			num = num * 10 + (s[i] - '0');
-		}
+		sign = -1;
 	}
 
-	printf("%d", num);
+	if (sign == -1)
+	{
+		offset = 1;
+	}
+	else 
+	{
+		offset = 0;
+	}
 
-	return (0);
+	n = 0;
+
+	for (c = offset; a[c] != '\0'; c++)
+	{
+		n = * 10 + a[c] - '0';
+	}
+
+	if (sign == -1)
+	{
+		n = -n;
+	}
 }
