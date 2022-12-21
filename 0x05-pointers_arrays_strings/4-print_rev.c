@@ -16,8 +16,8 @@ void print_rev(char *s)
 	{
 		temp = s[i];
 		s[i] = s[length - i - 1];
-		s[len - i - 1] = temp;
+		s[length - i - 1] = temp;
 	}
 
-	printf("%s", s;
+	printf("%s", s);
 }	
