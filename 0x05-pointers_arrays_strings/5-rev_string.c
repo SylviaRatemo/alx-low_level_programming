@@ -32,5 +32,5 @@ void rev_string(char *s)
 		end--;
 	}
 
-	printf("%s", s);
+	printf("%s\n", s);
 }
