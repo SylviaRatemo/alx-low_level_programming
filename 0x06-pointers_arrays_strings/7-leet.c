@@ -8,32 +8,20 @@
 
 char *leet(char *str)
 {
-	int index = 0;
+	int index1 = 0, index2 = 0;
+	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
 	while(str[index])
 	{
-		if (str[index] == 'a' || str[index] == 'A')
+		for (; index2 <= 7; index2++)
 		{
-			str[index] = '4';
+			if (str[index1] == leet[index2 || str[index1] - 32 == leet[index2)
+			{
+				str[index1] = index2 + '0';
+			}
 		}
-		else if (str[index] == 'e' || str[index] == 'E')
-		{
-			str[index] = '3';
-		}
-		else if (str[index] == 'o' || str[index] == 'O')
-		{
-			str[index] = '0';
-		}
-		else if (str[index] == 't' || str[index] == 'T')
-		{
-			str[index] = '7';
-		}
-		else if (str[index] == 'l' || str[index] == 'L')
-		{
-			str[index] = '1';
-		}
-		
-		index++;
+
+		index1++;
 	}
 
 	return (str);
