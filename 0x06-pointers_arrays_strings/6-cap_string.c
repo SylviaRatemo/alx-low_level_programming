@@ -2,6 +2,8 @@
 
 /**
  * cap_string - capitalize all words of a string
+ * @str: Input string
+ * Return: Pointer to the resulting str
  */
 
 char *cap_string(char *str)
@@ -33,4 +35,6 @@ char *cap_string(char *str)
 
 		index = 1;
 	}
+	
+	return (str);
 }
