@@ -10,18 +10,23 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *start = dest;
-
-	if ((dest == NULL) && (src == NULL))
+	int i = 0, length = 0, diff = 0;
+	
+	for (; i < *(dest + i); i++)
 	{
-		return NULL;
+		length++;
 	}
 
-	while (*src && n--)
+	diff = length - n;
+
+	while (*src && n-- > 0)
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		*dest = *src++;
+	}
+
+	while (diff-- > 0)
+	{
+		*dest++;
 	}
 
 	*dest = '\0';
