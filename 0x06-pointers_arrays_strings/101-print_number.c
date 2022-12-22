@@ -20,10 +20,11 @@ void print_number(int n)
 		putchar('0');
 	}
 
-	if (num / 10)
+	if ((num / 10) != 0)
 	{
-		print_number(num / 10);
+		putchar(n % 10)
+		print_number(n / 10);
 	}
 
-	putchar((num % 10) + '0');
+	putchar((n % 10) + '0');
 }
