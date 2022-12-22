@@ -19,12 +19,13 @@ char *_strcat(char *dest, char *src)
 
 	destindex = length - 1;
 
-	while (src[srcindex])
+	while (src[srcindex] != '\0')
 	{
 		dest[destindex] = src[srcindex];
 		destindex++;
 		srcindex++;
 	}
+	dest[destindex] = '\0';
 
 	return dest;
 }
