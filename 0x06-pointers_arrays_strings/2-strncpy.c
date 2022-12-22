@@ -40,7 +40,7 @@ char *_strncpy(char *dest, char *src, int n)
 		{
 			dest[destindex] = NULL;
 			destindex++;
-			dest--;
+			diff--;
 		}
 	}
 	else
