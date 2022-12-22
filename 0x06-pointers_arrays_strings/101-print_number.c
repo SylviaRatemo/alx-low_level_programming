@@ -22,5 +22,5 @@ void print_number(int n)
 		print_number(num / 10);
 	}
 
-	putchar((n % 10) + '0');
+	putchar((num % 10) + '0');
 }
