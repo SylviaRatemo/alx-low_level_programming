@@ -27,10 +27,9 @@ char *_strncpy(char *dest, char *src, int n)
 		len++;
 	}
 
-	final = (length + len);
-	diff = (n - final);
+	diff = (n - len);
 
-	if (final < n)
+	if (diff >= n)
 	{
 		while (src[srcindex] != '\0')
 		{
@@ -38,16 +37,16 @@ char *_strncpy(char *dest, char *src, int n)
 			destindex++;
 			srcindex++;
 		}
+	
 		while (diff != 0)
 		{
 			dest[destindex] = NULL;
 			destindex++;
 			diff--;
 		}
-	}
 	else
 	{
-		while ((src[srcindex] != '\0') && (destindex <= n))
+		while ((src[srcindex] != '\0') && (srcindex >= n))
 		{
 			dest[destindex] = src[srcindex];
 			destindex++;
