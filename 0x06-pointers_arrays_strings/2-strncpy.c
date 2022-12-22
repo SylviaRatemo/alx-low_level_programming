@@ -20,16 +20,18 @@ char *_strncpy(char *dest, char *src, int n)
 
 	diff = length - n;
 
-	while ((src[index] != '\0') && (n-- > 0))
+	while ((src[index] != '\0') && (n > 0))
 	{
 		dest[length] = src[index];
 		index++;
 		length++;
+		n--;
 	}
 
-	while (diff-- > 0)
+	while (diff > 0)
 	{
 		dest[length] = NULL;
+		diff--;
 	}
 
 	dest[length] = '\0';
