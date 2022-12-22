@@ -13,7 +13,7 @@ char *_strncpy(char *dest, char *src, int n)
 	int i = 0, length = 0;
 	int j = 0, len = 0;
 	int destindex = 0, srcindex = 0;
-	int diff;
+	int diff = 0;
 
 	for (; i < *(dest + i); i++)
 	{
@@ -52,6 +52,8 @@ char *_strncpy(char *dest, char *src, int n)
 			srcindex++;
 		}
 	}
+
+	dest[destindex] = '\0';
 
 	return (dest)
 }
