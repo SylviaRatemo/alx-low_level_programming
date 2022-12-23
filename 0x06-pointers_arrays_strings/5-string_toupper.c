@@ -3,20 +3,20 @@
 /**
  * string_toupper - change lowercase to uppercase
  * @str: input string
- * Return: Nothing
+ * Return: Pointer to str
  */
 
 char *string_toupper(char *str)
 {
-	int i = 0, index = 0;
+	int i = 0;
 
 	for (; str[i] != '\0'; i++)
 	{
-		if (str[index] >= 'a' && str[index] <= 'z')
+		if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			str[index] = str[index] - 32;
+			str[i] = str[i] - 32;
 		}
-		index++;
 	}
+	return (str);
 }
 		
