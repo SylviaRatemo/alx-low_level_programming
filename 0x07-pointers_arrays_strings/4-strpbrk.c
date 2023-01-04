@@ -9,18 +9,18 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int index;
+	int i = 0;
 
-	while (*s)
+	while (*(accept + i) != '\0')
 	{
-		for (index = 0; accept[index]; index++)
+		while (*(s + i) != '\0')
 		{
-			if (*s == accept[index])
+			if (s[i] == accept[i])
 			{
 				return (s);
 			}
 		}
-		s++
+		i++;
 	}
-	return ('\0');
+	return (NULL);
 }
