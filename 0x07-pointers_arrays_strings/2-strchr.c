@@ -9,11 +9,19 @@
 
 char *_strchr(char *s, char c)
 {
-	while (*s)
+	int length = 0;
+
+	for (int i = 0; *(s + i) != 0; i++)
 	{
-		if (*s != c)
+		length++;
+	}
+	length = length - 1;
+
+	while (length > -1)
+	{
+		if (s[length] != c)
 		{
-			s++;
+			length--;
 		}
 		else
 		{
