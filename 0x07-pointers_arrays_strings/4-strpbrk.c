@@ -18,6 +18,7 @@ char *_strpbrk(char *s, char *accept)
 	}
 
 	pos = i;
+	i = 0;
 
 	while (*(accept + i))
 	{
