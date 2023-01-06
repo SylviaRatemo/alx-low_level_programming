@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 #include <stdio.h>
 
 /**
@@ -9,15 +10,10 @@
 
 void _print_rev_recursion(char *s)
 {
-	int length, i = 0;
-	for (; (*(s + i) != 0); i++)
-	{
-		length++;
-	}
+	int length = strlen(s);
 
-	if (length != 0)
+	for (int i = length - 1; i >= 0; i--)
 	{
-		printf("%s", s[length - 1], _print_rev_recursion(s[length - 2]));
-		length--;
+		printf("%s", _print_rev_recursion(s[length - 2]));
 	}
 }
