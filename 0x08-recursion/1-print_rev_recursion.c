@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * print_rev_recursion - prints a string in reverse
+ * _print_rev_recursion - prints a string in reverse
  * @s: input string
  * Returns: Nothing
  */
@@ -14,7 +14,7 @@ void _print_rev_recursion(char *s)
 	{
 		_print_rev_recursion(s + 1);
 	}
-	else 
+	else
 		return;
 	printf("%c", *s);
 }
