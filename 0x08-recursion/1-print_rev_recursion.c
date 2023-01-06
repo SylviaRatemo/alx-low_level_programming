@@ -10,9 +10,9 @@
 
 void _print_rev_recursion(char *s)
 {
-	int i, length = strlen(s);
+	int length = strlen(s);
 
-	if (length = 0)
+	if (length == 0)
 	{
 		printf("\n");
 	}
