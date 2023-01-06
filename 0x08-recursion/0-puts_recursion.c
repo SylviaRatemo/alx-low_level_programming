@@ -11,7 +11,7 @@ void _puts_recursion(char *s)
 {
 	if (s[0] == '\0')
 	{
-		return;
+		printf("\n");
 	}
 	printf("%s\n", s);
 }
