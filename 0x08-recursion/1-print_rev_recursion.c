@@ -10,12 +10,17 @@
 
 void _print_rev_recursion(char *s)
 {
-	int length = strlen(s);
+	int i = 0, length;
+	if (*(s + i) != 0)
+	{
+		length = strlen(s);
+	}
 
-	if (length < 0)
+	if (*(s + i) == 0)
 	{
 		printf("\n");
 	}
+
 	printf("%c", s[length - 1]);
 	length--;
 	_print_rev_recursion(s);
