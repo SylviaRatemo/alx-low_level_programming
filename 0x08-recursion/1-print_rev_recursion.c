@@ -14,6 +14,6 @@ void _print_rev_recursion(char *s)
 
 	for (i = length - 1; i >= 0; i--)
 	{
-		printf("%s", _print_rev_recursion(s));
+		printf("%s", s[length - 1]_print_rev_recursion(s));
 	}
 }
