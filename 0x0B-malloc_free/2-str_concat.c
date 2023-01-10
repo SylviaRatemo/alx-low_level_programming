@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	if (len == 0)
+	if (s1 == NULL)
 	{
 		while (i < len2)
 		{
@@ -37,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 			i++;
 		}
 	}
-	else if (len2 == 0)
+	else if (s2 == NULL)
 	{
 		while (i < len)
 		{
