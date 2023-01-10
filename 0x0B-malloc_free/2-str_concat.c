@@ -15,11 +15,13 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		return (s2);
+		ar = s2;
+		return (ar);
 	}
 	if (s2 == NULL)
 	{
-		return (s1);
+		ar = s1;
+		return (ar);
 	}
 
 	while (s1[len] != 0)
