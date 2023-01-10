@@ -10,14 +10,19 @@
 char *_strdup(char *str)
 {
 	char *ar;
-	int i = 0;
+	int i = 0, len = 0;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	ar = malloc(sizeof(str));	
+	while (*str)
+	{
+		len++;
+	}
+
+	ar = malloc(len * sizeof(char));	
 	if (ar == NULL)
 	{
 		return (NULL);
