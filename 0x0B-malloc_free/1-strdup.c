@@ -16,9 +16,9 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	ar = malloc(sizeof(char));
-	free(ar);
 	ar = str;
+	free(ar);
+	ar = malloc(sizeof(char));
 
 	return (ar);
 }
