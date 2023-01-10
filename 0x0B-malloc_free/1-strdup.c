@@ -4,7 +4,7 @@
 /**
  * _strdup - function returns pointer to newly allocated space in memory
  * @str: input string array
- * Return: NULL if str is NULL or insufficient memory, pointer to duplicated string
+ * Return: NULL if str is NULL or insuff memory, pointer to duplicated string
  */
 
 char *_strdup(char *str)
@@ -22,7 +22,7 @@ char *_strdup(char *str)
 		len++;
 	}
 
-	ar = malloc(len * sizeof(char));	
+	ar = malloc(len * sizeof(char);
 	if (ar == NULL)
 	{
 		return (NULL);
@@ -34,6 +34,7 @@ char *_strdup(char *str)
 		i++;
 	}
 	ar[i] = '\0';
+	free(ar);
 
 	return (ar);
 }
