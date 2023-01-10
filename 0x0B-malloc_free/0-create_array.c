@@ -15,7 +15,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	char *p = (char*)calloc(size, sizeof(char));
+	int *p = (int*)calloc(size, sizeof(char));
 	p[0] = c;
 	return (p);
 }
