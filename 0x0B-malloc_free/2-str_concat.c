@@ -13,9 +13,13 @@ char *str_concat(char *s1, char *s2)
 	char *ar;
 	int len = 0, len2 = 0, i = 0, j = 0;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		return (NULL);
+		return (s2);
+	}
+	if (s2 == NULL)
+	{
+		return (s1);
 	}
 
 	while (s1[len] != 0)
