@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * argstosr - concatenates arguments
+ * argstostr - concatenates arguments
  * @ac: first input
  * @av: array input
  * Return: NUKK or pointer to new string
