@@ -25,7 +25,14 @@ char **strtow(char *str)
 		len++;
 	}
 
-	ar = strtok(str, " ");
+	if (; j < len; j++)
+	{
+		ar[i] = strtok(str[j], " ");
+		if [ar[i] == NULL)
+		{
+			return (NULL);
+		}
+	}
 
 	return (ar);
 }
