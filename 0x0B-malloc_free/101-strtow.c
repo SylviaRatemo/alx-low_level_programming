@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 #include <stdlib.h>
 
 /**
@@ -17,13 +18,14 @@ char **strtow(char *str)
 		return (NULL);
 	}
 
-	ar = malloc(sizeof(char) * len;
+	ar = malloc(sizeof(char) * len);
 
 	for (; *(str + i) != '\0'; i++)
 	{
 		len++;
 	}
 
-	for (; i < len; i++)
-	{
+	ar = strtok(str, " ");
 
+	return (ar);
+}
