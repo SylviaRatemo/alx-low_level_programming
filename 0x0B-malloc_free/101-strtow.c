@@ -13,7 +13,7 @@ char **strtow(char *str)
 	char *ar;
 	int len = 0, i = 0;
 
-	if (str == NULL || str = "")
+	if (str == NULL || str == "")
 	{
 		return (NULL);
 	}
