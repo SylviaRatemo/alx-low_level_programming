@@ -24,7 +24,8 @@ char *argstostr(int ac, char **av)
 			counter++;
 		counter++;
 	}
-	counter++; /* to account for \n that needs to be added later*/	
+	counter++;
+	
 	ar = malloc(sizeof(char) * counter);
 	if (ar == NULL)
 		return (NULL);
