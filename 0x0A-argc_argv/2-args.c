@@ -11,12 +11,9 @@ int main(int argc, char *argv[])
 {
 	int i = 0;
 
-	printf("Number of arguments: %d\n", argc);
-	printf("Array of arguments:\n ");
-
 	for (; i < argc; i++)
 	{
-		printf("argv[%d] = %s", i, argv[i]);
+		printf("%s", argv[i]);
 	}
 
 	return (0);
