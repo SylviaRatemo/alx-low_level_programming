@@ -19,6 +19,11 @@ int main(int argc, char *argv[])
 			mult *= argv[i];
 		}
 	}
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
 
 	return (0);
 }
