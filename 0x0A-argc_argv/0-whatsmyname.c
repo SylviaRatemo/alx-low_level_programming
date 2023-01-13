@@ -5,9 +5,9 @@
  * Return: nothing
  */
 
-int main(int argc, char *argv)
+int main(int argc, char **argv)
 {
-	printf("%s\n", __FILE__);
+	printf("%s\n", *argv);
 
 	return (0);
 }
