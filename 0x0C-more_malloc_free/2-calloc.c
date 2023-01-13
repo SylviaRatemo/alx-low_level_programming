@@ -17,7 +17,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	ar = calloc(nmemb, sizeof(int*) * size);
+	ar = calloc(nmemb, sizeof(int *) * size);
 	if (ar == NULL)
 	{
 		free(ar);
