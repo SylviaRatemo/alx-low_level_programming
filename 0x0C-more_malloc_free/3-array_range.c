@@ -10,7 +10,8 @@
 
 int *array_range(int min, int max)
 {
-	int *ar, i = 0;
+	int *ar;
+	int i = 0;
 
 	if (min > max)
 	{
