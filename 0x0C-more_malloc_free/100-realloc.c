@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * realloc - reallocates memory block
+ * _realloc - reallocates memory block
  * @ptr: memory pointer
  * @old_size: input old
  * @new_size: input new
@@ -11,16 +11,12 @@
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	void *p;
 
 	if (new_size == old_size)
 		return (ptr);
 
 	if (ptr == NULL)
-	{
-		p = malloc(new_size);
-		return (p);
-	}
+		ptr = malloc(new_size);
 
 	if (new_size == 0 && ptr != NULL)
 	{
@@ -32,4 +28,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	{
 		return (ptr);
 	}
+	free(ptr);
+	ptr = malloc(new_size);
+
+	return (ptr);
 }
