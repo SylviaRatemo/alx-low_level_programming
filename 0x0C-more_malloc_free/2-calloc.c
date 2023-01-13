@@ -17,12 +17,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	ar = (int*)calloc(nmemb, size);
+	ar = calloc(nmemb, sizeof(int*) * size);
 	if (ar == NULL)
 	{
 		free(ar);
 		return (NULL);
 	}
-	free(ar);
+
 	return (ar);
 }
