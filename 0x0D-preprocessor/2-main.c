@@ -2,12 +2,10 @@
 
 /**
  * main - print name of file
- * @argc: number of arguments
- * @argv: array of arguments
  * Return: Nothing
  */
 
-int main()
+int main(void)
 {
 	printf("%s\n", __FILE__);
 
