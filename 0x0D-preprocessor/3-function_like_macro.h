@@ -1,1 +1,1 @@
-#define ABS(x) (v) * ((v > 0) - (v < 0))
+#define ABS(x) (x) * ((x > 0) - (x < 0))
