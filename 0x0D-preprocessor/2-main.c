@@ -7,7 +7,7 @@
  * Return: Nothing
  */
 
-int main(int argc, char *argv[])
+int main()
 {
 	printf("%s\n", __FILE__);
 
