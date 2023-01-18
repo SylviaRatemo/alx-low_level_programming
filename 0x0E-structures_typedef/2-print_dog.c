@@ -18,15 +18,18 @@ void print_dog(struct dog *d)
 	{
 		if (d->age == 0)
 			printf("Name: (nil)\nAge: (nil)\nOwner: %s\n", d->owner);
-		else if (d->owner == 0)
+		else if (d->owner == NULL)
 			printf("Name: (nil)\nAge: %f\nOwner: (nil)\n", d->age);
 		else
 			printf("Name: (nil)\nAge: %f\nOwner: %s\n", d->age, d->owner);
 	}
 	else if (d->age == 0)
 	{
-
-		printf("Name: %s\nAge: (nil)\nOwner: %s\n", d->name, d->owner);
+		if (d->owner == NULL)
+			printf("Name: %s\nAge: (nil)\nOwner: (nil)\n", d->name);
+		else
+			printf("Name: %s\nAge: (nil)\nOwner: %s\n", d->name, d->owner);
+	}
 	else if (d->owner == NULL)
 		printf("Name: %s\nAge: %f\nOwner: (nil)\n", d->name, d->age);
 	else
