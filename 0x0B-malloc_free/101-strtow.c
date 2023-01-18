@@ -13,7 +13,7 @@ char **strtow(char *str)
 	char *ar;
 	int len = 0, i = 0, j = 0;
 
-	if (str == NULL || str == "")
+	if (str == NULL)
 	{
 		return (NULL);
 	}
@@ -28,7 +28,7 @@ char **strtow(char *str)
 	if (; j < len; j++)
 	{
 		ar[i] = strtok(str[j], " ");
-		if (ar[i] == NULL)
+		if (ar[i] == NULL || ar[i] == " ")
 		{
 			return (NULL);
 		}
