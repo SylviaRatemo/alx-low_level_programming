@@ -1,7 +1,7 @@
 #include "dog.h"
 
 /**
- * initi_dog - initializes dog
+ * init_dog - initializes dog
  * @d: structure dog
  * @name: dog name
  * @age: dog age
@@ -11,6 +11,7 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
+	d = malloc(sizeof(struct dog));
 	d->name = name;
 	d->age = age;
 	d->owner = owner;
