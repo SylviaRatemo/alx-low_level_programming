@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 
 /**
  * get_op_func - selects pointer to correct function
@@ -18,8 +18,6 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	if (s != '+' || s != '-' || s != '*' || s != '/' || s != '%')
-		return (NULL);
 	while (ops[i].op != NULL && *(ops[i].op) != *s)
 		i++;
 
