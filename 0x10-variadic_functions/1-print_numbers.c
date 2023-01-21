@@ -4,23 +4,23 @@
 
 /**
  * print_numbers - prints numbers
- * @seperator: characteer between numbers
+ * @separator: characteer between numbers
  * @n: argument count
  * Return: Nothing
  */
 
-void print_numbers(const char *seperator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
-	int i = 0;
+	unsigned int i = 0;
 
 	va_start(ap, n);
 
 	for (; i < n; i++)
 	{
 		printf("%d", va_arg(ap, int));
-		if (i != (n - 1) && seperator != NULL)
-			printf("%s", seperator);
+		if (i != (n - 1) && separator != NULL)
+			printf("%s", separator);
 	}
 	printf("\n");
 
