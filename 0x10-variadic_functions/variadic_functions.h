@@ -1,4 +1,3 @@
-#include <stdarg.h>
 #ifndef _VARIADIC_H
 #define _VARIADIC_H
 
