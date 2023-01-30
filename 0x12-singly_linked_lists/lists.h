@@ -6,7 +6,7 @@
 
 /**
  * struct list_s - singly linked list
- * @str; string - malloc'd string
+ * @str: string - malloc'd string
  * @len: length of the string
  * @next: pointsto next node
  */

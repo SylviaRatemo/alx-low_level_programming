@@ -3,11 +3,9 @@
 #include <stdlib.h>
 
 /*
- * print_list - print elements of list_t
+ * print_list - print nodes of list_t
  * @h: input struct
  * Return: number of nodes
- *
- * Description - print list of element
  */
 
 size_t print_list(const list_t *h)
