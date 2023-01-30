@@ -1,6 +1,8 @@
 #include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
 /*
  * add_node - add new node at the beginning of linked list
  * @head: input pointer to first element
@@ -31,4 +33,4 @@ list_t *add_node(list_t **head, const char *str)
 	*head = ptr;
 
 	return (*head);
-}	
+}
