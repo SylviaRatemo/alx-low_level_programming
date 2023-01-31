@@ -1,18 +1,9 @@
-;; file name: 101-hello_holberton.asm
-printf proto
-includelib msvcrt.lib
-includelib legacy_stdio_definitions.lib
-
-.data
-    messenge db "Hello, Holberton\n", 13, 0
-
-.code
-main proc
-    sub rsp, 40h
-    mov rcx, offset messenge
-    call printf
-    add rsp, 40h
-    ret
-main endp
-
-end
+global    main
+          extern    printf
+main:
+	  mov   edi, format
+	  xor   eax, eax
+	  call  printf
+	  mov 	eax, 0
+	  ret
+format: db `Hello, Holberton\n`,0
