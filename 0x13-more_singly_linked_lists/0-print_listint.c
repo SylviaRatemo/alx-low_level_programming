@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -9,15 +10,12 @@
 
 size_t print_listint(const listint_t *h)
 {
-	listint_t *temp = malloc(sizeof(listint_t));
 	size_t i = 0;
 
-	temp = h;
-
 	do {
-		printf("%d\n", temp->n);
-		temp = temp->link;
+		printf("%d\n", h->n);
+		h = h->next;
 		i++;
-	} while (temp->next != NULL);
+	} while (h->next != NULL);
 	return (i);
 }
