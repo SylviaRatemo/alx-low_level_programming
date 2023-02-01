@@ -11,11 +11,14 @@
 size_t print_listint(const listint_t *h)
 {
 	size_t i = 0;
+	listint_t *head = malloc(sizeof(listint_t));
+
+	head = h;
 
 	do {
-		printf("%d\n", h->n);
-		h = h->next;
+		printf("%d\n", head->n);
+		head = head->next;
 		i++;
-	} while (h->next != NULL);
+	} while (head->next != NULL);
 	return (i);
 }
