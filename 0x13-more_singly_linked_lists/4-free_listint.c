@@ -11,10 +11,10 @@ void free_listint(listint_t *head)
 {
 	listint_t *ptr = malloc(sizeof(listint_t));
 
+	ptr = head;
+
 	if (ptr == NULL)
 		free(ptr);
-
-	ptr = head;
 
 	free(ptr->next);
 	free(ptr);
