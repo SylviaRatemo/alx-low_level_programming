@@ -9,13 +9,9 @@
 
 void free_listint(listint_t *head)
 {
-	listint_t *ptr = malloc(sizeof(listint_t));
+	if (head == NULL)
+		free(head);
 
-	ptr = head;
-
-	if (ptr == NULL)
-		free(ptr);
-
-	free(ptr->next);
-	free(ptr);
+	free(head->next);
+	free(head);
 }
