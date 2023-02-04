@@ -14,7 +14,7 @@ listint_t *find_listint_loop(listint_t *head)
 	if (head == NULL || head->next == NULL)
 		return (NULL);
 
-	first = head-> next;
+	first = head->next;
 	second = (head->next)->next;
 
 	while (second)
@@ -30,7 +30,7 @@ listint_t *find_listint_loop(listint_t *head)
 			return (first);
 		}
 		first = first->next;
-		second= (second->next)->next;
+		second = (second->next)->next;
 	}
 	return (NULL);
 }
