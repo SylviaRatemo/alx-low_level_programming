@@ -15,6 +15,7 @@ void print_binary(unsigned long int n)
 		current = n >> index;
 
 		if (current & index) 
+		{
 			_putchar('1');
 			count++;
 		}
