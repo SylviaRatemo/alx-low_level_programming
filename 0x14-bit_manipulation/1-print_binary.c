@@ -12,10 +12,9 @@ void print_binary(unsigned long int n)
 
 	for (index = 63; index >= 0; index--)
 	{
-		current = n >> i;
+		current = n >> index;
 
-		if (current & i)
-		{
+		if (current & index) 
 			_putchar('1');
 			count++;
 		}
