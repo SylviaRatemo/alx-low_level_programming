@@ -12,11 +12,13 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int sz, fd = open(filename, O_RDWR | O_CREAT);
+	int sz, fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+	
+	sz = write(fd, text_content, strlen(text_content));
 
-	if (fd < 0 | filename == NULL)
+	if (fd < 0 | filename == NULL | sz < 0)
 		return (-1);
 
-	sz = write(fd, text_content, strlen(text_content));
+	close(fd);
 	return (1);
 }
