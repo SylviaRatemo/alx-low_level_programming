@@ -2,12 +2,12 @@
 #include "lists.h"
 
 /**
-  * get_dnodeint_at_index - Gets a node from a doubly linked list
-  * @head: The head of the doubly linked list
-  * @index: The index to find in the doubly linked list
-  *
-  * Return: The specific node of the doubly linked list
-  */
+ * get_dnodeint_at_index - get element at index
+ * @head: list
+ * @index: input position
+ * Return: element, NULL if fails
+ */
+
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	dlistint_t *current = head;
