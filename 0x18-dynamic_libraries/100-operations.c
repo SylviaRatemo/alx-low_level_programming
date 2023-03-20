@@ -4,7 +4,7 @@
  * add -sums two numbers
  * Return: the sum
  */
-int sum(int a, int b)
+int add(int a, int b)
 {
 	return (a + b);
 }
