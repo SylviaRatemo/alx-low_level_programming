@@ -1,0 +1,7 @@
+CC=gcc
+
+all: main.c school.c
+	$(CC) main.c school.c -o school
+
+clean:
+	rm *.o
