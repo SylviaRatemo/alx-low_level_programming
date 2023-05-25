@@ -2,4 +2,4 @@ CC=gcc
 SRC=*.c
 
 all: *.c
-	$(CC) *.c -o school
+	$(CC) $(SRC) -o school
