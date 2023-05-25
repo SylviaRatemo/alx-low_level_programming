@@ -3,3 +3,6 @@ SRC=*.c
 
 all: *.c
 	$(CC) $(SRC) -o school
+
+clean: 
+	rm *.o
